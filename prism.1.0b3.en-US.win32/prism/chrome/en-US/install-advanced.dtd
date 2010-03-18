@@ -1,0 +1,8 @@
+<!ENTITY dialog.title        "Advanced Settings">
+
+<!ENTITY group.caption       "Application Groups">
+<!ENTITY group.hint          "You can choose to keep the web application data separate from other web applications or you can share data among a group of web applications.">
+<!ENTITY newGroup.label      "Create a separate group for this application">
+<!ENTITY group.label         "Name:">
+<!ENTITY sharedGroup.label   "Use a shared group for this application">
+<!ENTITY groups.label        "Group:">

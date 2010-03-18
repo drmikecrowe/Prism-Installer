@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://webrunner/skin/about.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://webrunner/locale/about.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        id="about"
+        title="&dialog.title;"
+        buttons="accept"
+        width="300" height="400">
+  <script type="application/x-javascript" src="chrome://webrunner/content/about.js"/>
+
+  <vbox align="center">
+    <image src="chrome://branding/locale/icon128.png"/>
+  </vbox>
+
+  <vbox flex="1">
+    <label id="version"/>
+    <textbox id="useragent" multiline="true" readonly="true" flex="1"/>
+  </vbox>
+
+  <vbox flex="1" id="box_credits">
+    <label id="bundleinfo" value="&bundle.credits;"/>
+    <textbox id="credits" flex="1" readonly="true" multiline="true"/>
+  </vbox>
+
+</dialog>

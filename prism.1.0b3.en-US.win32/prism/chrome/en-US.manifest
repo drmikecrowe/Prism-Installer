@@ -1,0 +1,3 @@
+locale webrunner en-US en-US/
+locale newapp en-US en-US/
+override chrome://global/locale/netErrorApp.dtd chrome://webrunner/locale/netError.dtd

@@ -1,0 +1,56 @@
+<!ENTITY app.title                  "&brandShortName;">
+
+<!ENTITY commands.tooltip           "Commands">
+<!ENTITY file.label                 "File">
+<!ENTITY cut.label                  "Cut">
+<!ENTITY copy.label                 "Copy">
+<!ENTITY copylink.label             "Copy Link Location">
+<!ENTITY paste.label                "Paste">
+<!ENTITY delete.label               "Delete">
+<!ENTITY selectAll.label            "Select All">
+<!ENTITY noSuggestions.label        "(No suggestions)">
+<!ENTITY addToDictionary.label      "Add to Dictionary">
+<!ENTITY print.label                "Print...">
+<!ENTITY pageSetup.label            "Page Setup…">
+<!ENTITY back.label                 "Back">
+<!ENTITY forward.label              "Forward">
+<!ENTITY home.label                 "Home">
+<!ENTITY reload.label               "Reload">
+<!ENTITY close.label                "Close">
+<!ENTITY quit.label                 "Quit &brandShortName;">
+<!ENTITY about.label                "About &brandShortName;">
+<!ENTITY console.label              "Error Console">
+<!ENTITY install.label              "Install Shortcut">
+<!ENTITY tools.label                "Tools">
+<!ENTITY prefs.label                "Preferences...">
+<!ENTITY addons.label               "Add-ons...">
+
+<!ENTITY zoomIn.label               "Zoom In">
+<!ENTITY zoomIn.commandkey          "+">
+<!ENTITY zoomIn.commandkey2         "=">
+<!ENTITY zoomIn.modifiers           "accel">
+<!ENTITY zoomOut.label              "Zoom Out">
+<!ENTITY zoomOut.commandkey         "-">
+<!ENTITY zoomOut.modifiers          "accel">
+<!ENTITY zoomReset.label            "Reset">
+<!ENTITY zoomReset.commandkey       "0">
+<!ENTITY zoomReset.modifiers        "accel">
+<!ENTITY fullScreen.label           "Fullscreen">
+
+<!ENTITY findOnCmd.label            "Find in This Page…">
+<!ENTITY findOnCmd.accesskey        "F">
+<!ENTITY findOnCmd.commandkey       "f">
+<!ENTITY findNextCmd.label          "Find Next">
+<!ENTITY findNextCmd.accesskey      "g">
+<!ENTITY findNextCmd.commandkey     "g">
+<!ENTITY findNextCmd.commandkey2    "VK_F3">
+<!ENTITY findPreviousCmd.label      "Find Previous">
+
+<!ENTITY servicesMenu.label         "Services">
+<!ENTITY hideThisApp.label          "Hide &brandShortName;">
+<!ENTITY hideThisApp.commandkey     "H">
+<!ENTITY hideThisApp.modifiers      "accel">
+<!ENTITY hideOtherApps.label        "Hide Others">
+<!ENTITY hideOtherApps.commandkey   "H">
+<!ENTITY hideOtherApps.modifiers    "accel,alt">
+<!ENTITY showAllApps.label          "Show All">

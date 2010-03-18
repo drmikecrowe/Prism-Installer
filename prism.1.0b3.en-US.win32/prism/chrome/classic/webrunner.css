@@ -1,0 +1,93 @@
+/* toolbar ----------------------------------------------------------------- */
+toolbar[mode="icons"] .toolbarbutton-text {
+  display: none !important;
+}
+
+toolbar[mode="text"] .toolbarbutton-icon {
+  display: none;
+}
+
+toolbar > toolbarbutton {
+  -moz-box-orient: vertical;
+  min-width: 0;
+  -moz-margin-end: 0px;
+  list-style-image: url("chrome://webrunner/skin/images/toolbar.png");
+}
+
+#tool_back {
+  -moz-image-region: rect(0px 16px 16px 0px);
+}
+
+#tool_back[disabled="true"] {
+  -moz-image-region: rect(32px 16px 48px 0px);
+}
+
+#tool_forward {
+  -moz-image-region: rect(0px 32px 16px 16px);
+}
+
+#tool_forward[disabled="true"] {
+  -moz-image-region: rect(32px 32px 48px 16px);
+}
+
+#tool_home {
+  -moz-image-region: rect(0px 80px 16px 64px);
+}
+#tool_reload {
+  -moz-image-region: rect(0px 64px 16px 48px);
+}
+
+#urlbar-container {
+  -moz-box-orient: horizontal;
+  -moz-box-align: center;
+  background-color: #fff;
+  border: 1px solid ThreeDShadow;
+  -moz-border-radius: 14px;
+  margin: 4px 4px 4px 4px;
+}
+
+#urlbar {
+  -moz-appearance: none !important;
+  background-color: transparent !important;
+  padding: 0px !important;
+  border: none !important;
+}
+
+/* statusbar---------------------------------------------------------------- */
+#security {
+  list-style-image: none;
+  min-width: 20px;
+  -moz-box-direction: reverse;
+  display: none;
+}
+
+#security[level="high"], #security[level="med"], #security[level="low"] {
+  list-style-image: url("chrome://webrunner/skin/images/secure.png");
+  display: -moz-box;
+}
+
+#security[level="broken"] {
+  list-style-image: url("chrome://webrunner/skin/images/secure-broken.png");
+  display: -moz-box;
+}
+
+#security > label:not([value]) {
+  display: none;
+}
+
+#button_commands {
+  list-style-image: url("chrome://webrunner/skin/images/gear.png");
+}
+
+/* sidebar ----------------------------------------------------------------- */
+.sidebarheader {
+  height: 25px;
+  background-color: -moz-Dialog;
+  -moz-appearance: toolbox;
+  -moz-box-align: center;
+  border-bottom: 1px solid ThreeDShadow;
+}
+
+.sidebarheader > label {
+  -moz-padding-start: 4px;
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://newapp/skin/install-shortcut.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://newapp/locale/install-shortcut.dtd">
+
+<dialog id="install-shortcut"
+        title="&dialog.title;"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        persist="screenX screenY"
+        buttons="accept,cancel"
+        onload="InstallShortcut.init();"
+        onunload="InstallShortcut.cleanup();"
+        ondialogaccept="return InstallShortcut.accept();">
+
+  <script type="application/x-javascript" src="chrome://newapp/content/install-shortcut.js"/>
+
+  <groupbox>
+    <caption label="&dialog.caption;"/>
+    <grid>
+      <columns>
+        <column/>
+        <column flex="1"/>
+      </columns>
+      <rows>
+        <row id="row_uri" hidden="true">
+          <label control="uri">&uri.label;</label>
+          <textbox id="uri"/>
+        </row>
+        <row id="row_name">
+          <label control="name">&name.label;</label>
+          <textbox id="name"/>
+        </row>
+      </rows>
+    </grid>
+    <vbox id="options" hidden="true">
+      <checkbox id="location" label="&location.label;"/>
+      <checkbox id="status" label="&status.label;"/>
+      <checkbox id="navigation" label="&navigation.label;"/>
+      <checkbox id="trayicon" label="&trayicon.label;"/>
+    </vbox>
+  </groupbox>
+  <separator class="thin"/>
+  <groupbox>
+    <caption label="&shortcut.caption;"/>
+    <checkbox id="desktop" label="&desktop.label;"/>
+    <checkbox id="programs" label="&programs.label;"/>
+    <checkbox id="quicklaunch" label="&quicklaunch.label;"/>
+    <checkbox id="applications" label="&applications.label;"/>
+    <separator class="thin"/>
+    <description class="indent">&uninstall.hint;</description>
+  </groupbox>
+  <groupbox>
+    <caption label="&icon.caption;"/>
+    <description style="max-width:30em;">&icon.hint;</description>
+    <separator class="thin"/>
+    <hbox align="top" style="height: 128px;">
+      <separator width="5px"/>
+      <image id="icon" style="max-width: 128px; max-height: 128px;"/>
+      <separator flex="1"/>
+      <button id="icon_source" type="menu" label="&iconSettings.label;">
+        <menupopup>
+          <menuitem id="icon_favicon" type="radio" name="source" label="&iconFavicon.label;" oncommand="InstallShortcut.useFavicon();"/>
+          <menuitem id="icon_file" type="radio" name="source" label="&iconFile.label;" oncommand="InstallShortcut.useFile();"/>
+        </menupopup>
+      </button>
+    </hbox>
+  </groupbox>
+</dialog>

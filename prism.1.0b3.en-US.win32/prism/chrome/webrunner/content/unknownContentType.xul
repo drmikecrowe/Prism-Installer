@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<overlay id="overlay_unknownContentType" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<groupBox id="normalBox">
+  <description id="settingsChange" removeelement="true" />
+  <description id="settingsChange" />
+</groupBox>
+
+</overlay>

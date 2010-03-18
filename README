@@ -1,0 +1,14 @@
+Prism is an application that lets users split web applications 
+out of their browser and run them directly on their desktop
+
+http://prism.mozillalabs.com/
+Prism is a Mozilla Labs http://labs.mozilla.com/about-labs/ project.
+
+This is a generic installer for Prism.  As-is, it is only marginally useful. 
+Instead, use this as a base for more detailed installations.
+
+Installation system:  http://nsis.sourceforge.net/
+
+Questions/Comments:  Email me at drmikecrowe (at) gmail (dot) com
+
+

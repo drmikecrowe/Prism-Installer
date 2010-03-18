@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://newapp/locale/install-advanced.dtd">
+
+<dialog id="install-advanced"
+        title="&dialog.title;"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        persist="screenX screenY"
+        buttons="accept,cancel"
+        onload="InstallAdvanced.init();"
+        ondialogaccept="return InstallAdvanced.accept();">
+
+  <script type="application/x-javascript" src="chrome://newapp/content/install-advanced.js"/>
+
+  <groupbox>
+    <caption label="&group.caption;"/>
+    <description style="max-width:30em;">&group.hint;</description>
+    <radiogroup id="grouping">
+      <radio id="new_group" label="&newGroup.label;"/>
+      <hbox class="indent">
+        <label value="&group.label;" control="group"/>
+        <textbox id="group"/>
+      </hbox>
+      <radio id="shared_group" label="&sharedGroup.label;"/>
+      <hbox class="indent">
+        <label value="&groups.label;" control="groups"/>
+        <menulist id="groups">
+          <menupopup/>
+        </menulist>
+      </hbox>
+    </radiogroup>
+  </groupbox>
+</dialog>

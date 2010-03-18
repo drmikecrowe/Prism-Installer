@@ -1,0 +1,5 @@
+resource prism ..
+content branding webrunner/branding/
+content webrunner webrunner/content/ xpcnativewrappers=no
+locale branding en-US webrunner/branding/
+overlay chrome://mozapps/content/downloads/unknownContentType.xul chrome://webrunner/content/unknownContentType.xul
